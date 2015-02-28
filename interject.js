@@ -7,7 +7,6 @@ for example 'npm install irc'
 */
 
 #var irc = require('irc');
-#var util = require('util');
 #var _ = require('underscore');
 
 /*
@@ -41,8 +40,7 @@ bot.addListener('pm', function (from, message) {
 
 bot.addListener('message', function(from, to, message) {
   if 
-(/(g|G)(n|N)(u|U)((\s*|)((\/)|((p|P)(l|L)(u|U)(s|S))|(\+)|((s|S)(l|L)(a|A)(s|S)(h|H)))(\s*|))\
-(l|L)(i|I)(n|N)(u|U)(x|X)\??/i.test(message)){
+(/(g|G)(n|N)(u|U)((\s*|)((\/)|((p|P)(l|L)(u|U)(s|S))|(\+)|((s|S)(l|L)(a|A)(s|S)(h|H)))(\s*|))\(l|L)(i|I)(n|N)(u|U)(x|X)\??/i.test(message)){
 }
   else if (/(l|L)(i|I)(n|N)(u|U)(x|X)\??/i.test(message)){
   bot.say(to, 'I\'d just like to interject for a moment. What you\’re referring to as Linux,\
