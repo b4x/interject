@@ -6,8 +6,8 @@ install each one with 'npm install [dependency]'
 for example 'npm install irc'
 */
 
-#var irc = require('irc');
-#var _ = require('underscore');
+var irc = require('irc');
+var _ = require('underscore');
 
 /*
 #########################
